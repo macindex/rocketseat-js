@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso JS Rocketseat</title>
+
+    </head>
+    <body>
+        <script>
+          //FUNÇÕES
+
+          function retornaSex(sexo){
+              //VERIFICA SE VALORES SÃO IGUAIS ==
+              //VERIFICA SE VALORES SÃO IGUAIS E TIPO ===
+            /**
+              if (sexo === 'M'){
+                    return 'Masculino';
+              }else{
+                  return 'Feminino';
+              }
+          }
+          if (sexo === 'M'){
+                    return 'Masculino';
+              }else if (sexo === 'F'){
+                  return 'Feminino';
+              }else{
+                  return 'outro';
+              }
+          }*/
+          switch (sexo){
+            case 'M':return 'Masculino';
+            case 'F': return 'Feminino';
+            default: return 'Outro';
+          }
+        }
+           var resultado = retornaSex('x')
+
+          console.log(resultado);
+
+            
+        </script>
+    </body>
+</html>

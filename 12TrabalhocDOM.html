@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso JS Rocketseat</title>
+
+    </head>
+    <body>
+
+        <div id="app">
+           
+            <input type="text" name="nome" id="nome" class="nome"/>
+            <button class="botao">Adicionar</button>
+
+        </div>
+        <script>
+            //BUSCANDO INFORMAÇÕES ATRAVÉS
+            //DO SCRIPT
+          /**var inputElement = document.getElementById('nome');
+            
+            console.log(inputElement);
+            
+            SERÁ BUSCADO UM ELEMENTO COM ID NOME
+            console.log(inputElement); IRÁ RETORNAR ELE NA SAÍDA
+
+            NESTE ELEMENTO IRÁ BUSCAR A TAG INPUT RETORNA COMO VETOR
+            var inputElement = document.getElementsByTagName('input')[0];
+
+            CASO NÃO PASSE NO ARRAY A POSIÇÃO ELE RETORNA UM HTML HTMLCollection
+            COM A QUANTIDADE DE INPUT'S PRESENTES
+            var inputElement = document.getElementsByTagName('input');
+
+            TAMBÉM RETORNA UM ARRAY
+            var inputElement = document.getElementsByClassName('nome');
+          
+            var inputElement = document.querySelector('body div#app input');
+
+            var inputElement = document.querySelector('input[name=nome]');
+
+            var inputElement = document.querySelector('input');
+            CASO NÃO REFERENCIE O INPUT RETORNA SOMENTE O PRIMEIRO*/
+
+
+            //AQUI TMBEM POSSO RECUPERAR O QUE FOR DIGITADO
+            var inputElement = document.querySelector('input');
+            var btnElement = document.querySelector('button.botao');
+            
+            btnElement.onclick = function(){
+                var text = inputElement.value;
+
+                alert(text);
+            }
+
+
+
+            //console.log(inputElement);
+        </script>
+    </body>
+</html>
